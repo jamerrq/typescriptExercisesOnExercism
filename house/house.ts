@@ -1,4 +1,4 @@
-const pronouns = [
+const pronouns: string[] = [
   'the house that Jack built.',
   'the malt',
   'the rat',
@@ -13,7 +13,7 @@ const pronouns = [
   'the horse and the hound and the horn',
 ]
 
-const verbs = [
+const verbs: string[] = [
   'lay in',
   'ate',
   'killed',
@@ -28,25 +28,9 @@ const verbs = [
 ]
 
 export function verse (index: number): string[] {
-  let verse: string[] = []
-  for (let i = index - 1; i >= 0; i--) {
-    if (i === index - 1) {
-      verse.push(`This is ${pronouns[i]}`)
-    } else {
-      verse.push(`that ${verbs[i]} ${pronouns[i]}`)
-    }
-  }
-  return verse
+  return Array.from({ length: index - 1 }, (_, i) => `that ${verbs[i]} ${pronouns[i]}`).concat([`This is ${pronouns[index - 1]}`]).reverse()
 }
 
 export function verses (start: number, end: number): string[] {
-  let verses: string[] = []
-  for (let i = start; i <= end; i++) {
-    verses.push(...verse(i))
-    verses.push('')
-  }
-  verses.pop()
-  return verses
+  return Array.from({ length: end - start + 1 }, (_, i) => verse(i + start).concat('')).flat().slice(0, -1)
 }
-
-// console.log(verses(4, 8))
