@@ -1,4 +1,8 @@
-# TypeScript Track
+# TypeScript Track on Exercism
+
+## Progress
+
+![](lib/progress.png)
 
 ## About
 
