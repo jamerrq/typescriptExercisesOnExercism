@@ -1,0 +1,33 @@
+{
+  "description": "Exercism exercises in Typescript.",
+  "devDependencies": {
+    "@exercism/babel-preset-typescript": "^0.4.0",
+    "@exercism/eslint-config-typescript": "^0.5.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "~18.16.16",
+    "babel-jest": "^29.5.0",
+    "core-js": "~3.30.2",
+    "eslint": "^8.42.0",
+    "jest": "^29.5.0",
+    "typescript": "~5.0.4",
+    "vitest": "^0.34.4"
+  },
+  "engines": {
+    "node": "^18.16.0 || >=20.0.0"
+  },
+  "name": "@exercism/typescript-connect",
+  "packageManager": "yarn@3.6.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exercism/typescript"
+  },
+  "scripts": {
+    "lint": "yarn lint:types && yarn lint:ci",
+    "lint:ci": "eslint . --ext .tsx,.ts",
+    "lint:types": "yarn tsc --noEmit -p .",
+    "test": "vitest"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
