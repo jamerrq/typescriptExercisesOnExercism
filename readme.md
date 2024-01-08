@@ -91,7 +91,7 @@ Here's the complete list of exercises from the TypeScript track:
 66 | [Nth Prime](https://exercism.org/tracks/typescript/exercises/nth-prime) | :white_check_mark: | [TS](./src/nth-prime/nth-prime.ts)
 67 | [Alphametics](https://exercism.org/tracks/typescript/exercises/alphametics) | :large_blue_circle: | [TS](./src/alphametics/alphametics.ts)
 68 | [Connect](https://exercism.org/tracks/typescript/exercises/connect) | :large_blue_circle: | [TS](./src/connect/connect.ts)
-69 | [Bowling](https://exercism.org/tracks/typescript/exercises/bowling) | :large_blue_circle: | [TS](./src/bowling/bowling.ts)
+69 | [Bowling](https://exercism.org/tracks/typescript/exercises/bowling) | :white_check_mark: | [TS](./src/bowling/bowling.ts)
 70 | [Prime Factors](https://exercism.org/tracks/typescript/exercises/prime-factors) | :white_check_mark: | [TS](./src/prime-factors/prime-factors.ts)
 71 | [Diamond](https://exercism.org/tracks/typescript/exercises/diamond) | :white_check_mark: | [TS](./src/diamond/diamond.ts)
 72 | [Pascals Triangle](https://exercism.org/tracks/typescript/exercises/pascals-triangle) | :white_check_mark: | [TS](./src/pascals-triangle/pascals-triangle.ts)
